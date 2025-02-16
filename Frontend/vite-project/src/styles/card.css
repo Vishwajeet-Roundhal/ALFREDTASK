@@ -1,0 +1,61 @@
+.flashcard-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: var(--card-margin);
+    text-align: left;
+    transition: var(--transition);
+    cursor: pointer; /* Indicates the card is interactive */
+  }
+
+  .flashcard button {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /* Hover Effect */
+  .flashcard-card:hover {
+    transform: scale(var(--card-hover-scale));
+    box-shadow: var(--card-hover-shadow);
+  }
+  
+  /* Focus State for Accessibility */
+  .flashcard-card:focus {
+    outline: 2px solid rgba(0, 123, 255, 0.5); /* Visible focus indicator */
+    outline-offset: 2px;
+  }
+  
+  /* Question Text */
+  .flashcard-card p {
+    margin: 8px 0; /* Slightly increased margin for better spacing */
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.5; /* Improved readability */
+  }
+  
+  /* Next Review Date */
+  .flashcard-card .next-review {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: 10px; /* Added margin for separation */
+  }
+  
+  /* Optional: Add a subtle animation on hover */
+  .flashcard-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .flashcard-card:hover {
+    background: #ffffff; /* Slight background change on hover */
+  }
+  
+  /* Optional: Add a border transition for a polished effect */
+  .flashcard-card {
+    border: 1px solid transparent; /* Start with a transparent border */
+  }
+  
+  .flashcard-card:hover {
+    border-color: rgba(0, 123, 255, 0.2); /* Add a subtle border color on hover */
+  }

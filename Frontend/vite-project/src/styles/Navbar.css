@@ -1,0 +1,118 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CSS Variables */
+  :root {
+    --primary-bg: linear-gradient(135deg, #333, #444);
+    --primary-text: white;
+    --hover-bg: rgba(255, 255, 255, 0.2);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease-in-out;
+    --font-family: "Arial", sans-serif;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--primary-bg);
+    padding: 15px 20px;
+    box-shadow: var(--shadow);
+  }
+  
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px; /* Add padding here */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  }
+  /* Logo */
+  .logo a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 1px;
+    transition: transform var(--transition);
+  }
+  
+  .logo a:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Nav Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  /* Nav Link Styles */
+  .nav-links a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: var(--transition);
+  }
+  
+  .nav-links a:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-2px);
+  }
+  
+  /* Mobile Menu */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      padding-top: 10px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .nav-links a {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1rem;
+    }
+  
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  
+  /* Accessibility Improvements */
+  .nav-links a:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+  }
+  
+  /* Smooth Scroll Behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  

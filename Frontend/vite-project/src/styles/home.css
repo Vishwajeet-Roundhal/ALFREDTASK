@@ -1,0 +1,13 @@
+/* Centering the Home Content */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Adding Space Between Components */
+  .container > * {
+    margin-bottom: 20px;
+  }
+  
